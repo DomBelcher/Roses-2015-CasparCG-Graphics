@@ -23,32 +23,49 @@
                 </div>
 
                 <div class="logo right top toggle" ng-show="state.showLogo">
-                    <img src="/images/roses2017logo.png" />
+                    <img src="/images/LGT-logo-500x500.png" />
                 </div>
             </div>
         </div>
 
         <div ng-controller="lowerThirdsCtrl">
+          
         	<div class="lowerthird bottom fullwidth scale-fade" ng-show="showFull">
-                <div class="gradient-overlay">
-                    <h1>{{full.heading}}</h1>
-                </div>
-                <h2 ng-show="full.subHeading">{{full.subHeading}}</h2>
+            <div class="logo-container">
+              <img src ="images/LGT-logo-notext-bg-100x100.png" class="lt-logo"/>
             </div>
+            <div class="container fw" style="top: {{full.subHeading ? '11px' : '34px'}}">
+              <div class="gradient-overlay">
+                <h1>{{full.heading}}</h1>
+              </div>
+              <h2 ng-show="full.subHeading">{{full.subHeading}}</h2>
+            </div>
+          </div>
         
-            <div class="lowerthird left bottom slide-left" ng-show="showLeft">
-                <div class="gradient-overlay">
-                    <h1>{{left.heading}}</h1>
-                </div>
-                <h2 ng-show="left.subHeading">{{left.subHeading}}</h2>
+          <div class="lowerthird left bottom slide-left" ng-show="showLeft">
+            <div class="logo-container c-left">
+              <img src ="images/LGT-logo-notext-bg-100x100.png" class="lt-logo"/>
             </div>
+            <div class="container c-left" style="top: {{left.subHeading ? '11px' : '34px; height: 77px;'}}">
+              <div class="gradient-overlay">
+                <h1>{{left.heading}}</h1>
+              </div>
+              <h2 ng-show="left.subHeading">{{left.subHeading}}</h2>
+            </div>
+          </div>
 
-            <div class="lowerthird right bottom slide-right" ng-show="showRight">
-                <div class="gradient-overlay">
-                    <h1>{{right.heading}}</h1>
-                </div>
-                <h2 ng-show="right.subHeading">{{right.subHeading}}</h2>
+          <div class="lowerthird right bottom slide-right" ng-show="showRight">
+            <div class="logo-container c-right">
+              <img src ="images/LGT-logo-notext-bg-100x100.png" class="lt-logo"/>
             </div>
+            <div class="container c-right" style="top: {{right.subHeading ? '11px' : '34px'}}">
+              <div class="gradient-overlay">
+                <h1>{{right.heading}}</h1>
+              </div>
+              <h2 ng-show="right.subHeading">{{right.subHeading}}</h2>
+            </div>
+          </div>
+          
         </div>
 
         <div ng-controller="boxingCtrl">
