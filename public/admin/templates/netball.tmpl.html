@@ -55,7 +55,7 @@
 
     <div class="ui grid center aligned">
         <div class="eight wide column">
-            <h3>Lancaster</h3>
+            <input type="text" value="Home" ng-model="netball.homeName"/>
             <h1>{{netball.lancScore}}</h1>
             <div class="ui icon buttons">
                 <button class="ui green button" ng-click="netball.lancScore = netball.lancScore + 1;">
@@ -68,7 +68,7 @@
         </div>
 
         <div class="eight wide column">
-            <h3>York</h3>
+            <input type="text" value="Away" ng-model="netball.awayName"/>
             <h1>{{netball.yorkScore}}</h1>
             <div class="ui icon buttons">
                 <button class="ui green button" ng-click="netball.yorkScore = netball.yorkScore + 1;">
@@ -102,7 +102,7 @@
             <div class="column">
                 <table class="ui striped table">
                     <thead>
-                        <th colspan="2">Lancaster</th>
+                        <th colspan="2">{{netball.homeName}}</th>
                     </thead>
                     <tbody>
                         <tr ng-repeat="player in lancsPlayers">
@@ -120,7 +120,7 @@
             <div class="column">
                 <table class="ui striped table">
                     <thead>
-                        <th colspan="2">York</th>
+                        <th colspan="2">{{netball.awayName}}</th>
                     </thead>
                     <tbody>
                         <tr ng-repeat="player in yorksPlayers">
@@ -140,7 +140,7 @@
     <div class="ui bottom attached tab segment" data-tab="settings">
         <div class="ui two column grid">
             <div class="column">
-                <h2>Lancaster</h2>
+                <h2>{{netball.homeName}}</h2>
                 <form class="ui form">
                     <div class="field">
                         <label></label>
@@ -195,7 +195,7 @@
             </div>
 
             <div class="column">
-                <h2>York</h2>
+                <h2>{{netball.awayName}}</h2>
                 <form class="ui form">
                     <div class="field">
                         <label></label>
